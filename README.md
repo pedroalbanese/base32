@@ -3,12 +3,10 @@
 
 ## Usage:
 <pre>Usage of base32.exe:
-  -col int
+  -c int
         Columns (default 64)
-  -dec
-        Decode instead Encode
-  -nopadding
-        No padding
+  -d    Decode instead Encode
+  -n    No padding
 </pre>
 
 This project is licensed under the ISC License.
