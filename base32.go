@@ -11,9 +11,9 @@ import (
 )
 
 var (
-	col = flag.Int("col", 64, "Columns")
-	pad = flag.Bool("nopadding", false, "No padding")
-	dec = flag.Bool("dec", false, "Decode instead Encode")
+	col = flag.Int("c", 64, "Columns")
+	dec = flag.Bool("d", false, "Decode instead Encode")
+	pad = flag.Bool("n", false, "No padding")
 )
 
 func main() {
