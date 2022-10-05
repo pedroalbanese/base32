@@ -14,7 +14,7 @@ The rest of this article discusses the use of Base32 for representing byte strin
 <pre>Usage of base32.exe:
   -c int
         Columns (default 64)
-  -d    Decode instead Encode
+  -d    Decode instead of Encode
   -n    No padding
 </pre>
 
