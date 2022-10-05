@@ -12,7 +12,7 @@ import (
 
 var (
 	col = flag.Int("c", 64, "Columns")
-	dec = flag.Bool("d", false, "Decode instead Encode")
+	dec = flag.Bool("d", false, "Decode instead of Encode")
 	pad = flag.Bool("n", false, "No padding")
 )
 
