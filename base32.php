@@ -31,7 +31,7 @@ class Base32 {
      * @return base32 encoded string
      * @author Bryan Ruiz
      **/
-    public static function encode($input, $padding = true) {
+    public static function encode($input, $padding = false) {
         if(empty($input)) return "";
         $input = str_split($input);
         $binaryString = "";
