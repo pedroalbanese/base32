@@ -20,4 +20,4 @@ The rest of this article discusses the use of Base32 for representing byte strin
 
 This project is licensed under the ISC License.
 
-##### Copyright (c) 2020-2022 Pedro F. Albanese - ALBANESE Research Lab.
+##### Copyright (c) 2016-2022 Pedro F. Albanese - ALBANESE Research Lab.
