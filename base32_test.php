@@ -1,5 +1,5 @@
 <?php
 include 'base32.php';
 
-echo Base32::encode('Pedro Fernandes Albanese')
+echo Base32::encode('Binary String')
 ?>
