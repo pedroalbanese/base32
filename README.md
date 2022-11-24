@@ -1,4 +1,4 @@
-# Base32
+# Base32 RFC 4648
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/pedroalbanese/base32/blob/master/LICENSE.md) 
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/base32?status.png)](http://godoc.org/github.com/pedroalbanese/base32)
 [![GitHub downloads](https://img.shields.io/github/downloads/pedroalbanese/base32/total.svg?logo=github&logoColor=white)](https://github.com/pedroalbanese/base32/releases)
