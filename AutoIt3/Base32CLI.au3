@@ -24,8 +24,8 @@ Else
 			If @error Then ExitLoop
 			Sleep(25)
 		WEnd
-		$full = StringReplace($sOutput, @CRLF, '')
-		$full = StringReplace($full, @LF, '')
+		$full = StringReplace($sOutput, @LF, '')
+		$full = StringReplace($full, @CRLF, '')
 		If $CmdLine[1] == "-e" Then
 			ConsoleWrite(_Base32_Encode($full))
 		ElseIf $CmdLine[1] == "-d" Then
@@ -37,6 +37,8 @@ Else
 		Else
 			$full = $CmdLine[2]
 		EndIf
+		$full = StringReplace($full, @LF, '')
+		$full = StringReplace($full, @CRLF, '')
 		If $CmdLine[1] == "-e" Then
 			ConsoleWrite(_Base32_Encode($full))
 		ElseIf $CmdLine[1] == "-d" Then
