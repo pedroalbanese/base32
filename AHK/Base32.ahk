@@ -1,17 +1,20 @@
+; ====================================================
+; ================ AHK Encryption GUI ================
+; ====================================================
+; AutoHotKey version: 1.1.35.0
+; Language:           English
+; Author:             Pedro F. Albanese
+; Modified:           -
+;
+; ----------------------------------------------------------------------------
+; Script Start
+; ----------------------------------------------------------------------------
+
 #NoEnv
 SetBatchLines, -1
-Dummy := "
-(Join
-Base32 is a notation for encoding arbitrary byte data using a restricted set of symbols which can be conveniently used by humans
- and processed by old computer systems which only recognize restricted character sets.`r`n
-Base32 comprises a symbol set made up of 32 different characters, as well as an algorithm for encoding arbitrary strings using
- 8-bit characters into the Base32 alphabet. This uses more than one 5-bit Base32 symbol for each 8-bit input character, and thus
- also specifies requirements on the allowed lengths of Base32 strings (which must be multiples of 40 bits). The Base64 system,
- in contrast, uses a set of 64 symbols, but is closely related.
-)"
 Gui, Margin, 20, 10
 Gui, Font, s10, Courier New
-Gui, Add, Edit, w600 r10 vInput, %Dummy%
+Gui, Add, Edit, w600 r10 vInput
 Gui, Font
 Gui, Add, Button, gEncode, Encode
 Gui, Add, Button, x+m yp gDecode, Decode
