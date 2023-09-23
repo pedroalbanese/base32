@@ -9,11 +9,11 @@
 Base32 is the base-32 numeral system. It uses a set of 32 digits, each of which can be represented by 5 bits (25). One way to represent Base32 numbers in a human-readable way is by using a standard 32-character set, such as the twenty-two upper-case letters A–V and the digits 0-9. However, many other variations are used in different contexts.
 
 ## Usage:
-<pre>Usage of base32.exe:
-  -c int
-        Columns (default 64)
+<pre>Usage of base32:
   -d    Decode instead of Encode
   -n    No padding
+  -w int
+        Wrap lines after N columns (default 64)
 </pre>
 
 This project is licensed under the ISC License.
