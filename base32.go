@@ -30,23 +30,13 @@ func main() {
 		}
 
 		inputData := string(data)
-		inputData = strings.TrimSuffix(inputData, "\r\n")
-		inputData = strings.TrimSuffix(inputData, "\n")
 
 		if *dec == false && *pad == false {
 			sEnc := b32.StdEncoding.EncodeToString([]byte(inputData))
 			fmt.Println(sEnc)
-		} else if *dec && *pad == false {
-			decoder := b32.NewDecoder(b32.StdEncoding, strings.NewReader(inputData))
-			io.Copy(os.Stdout, decoder)
-		}
-
-		if *dec == false && *pad == true {
+		} else if *dec == false && *pad == true {
 			sEnc := b32.StdEncoding.WithPadding(-1).EncodeToString([]byte(inputData))
 			fmt.Println(sEnc)
-		} else if *dec && *pad == true {
-			decoder := b32.NewDecoder(b32.StdEncoding.WithPadding(-1), strings.NewReader(inputData))
-			io.Copy(os.Stdout, decoder)
 		}
 	} else {
 		var inputData string
@@ -64,9 +54,6 @@ func main() {
 			}
 			inputData = string(data)
 		}
-
-		inputData = strings.TrimSuffix(inputData, "\r\n")
-		inputData = strings.TrimSuffix(inputData, "\n")
 
 		if *col != 0 {
 			if *dec == false && *pad == false {
